@@ -121,7 +121,7 @@ nav ul li a:hover {
 
 /* Header */
 header .jumbotron {
-  background-image: url('src/image-001.jpg');
+  background-image: url('src/img-1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   padding: 150px 0;
