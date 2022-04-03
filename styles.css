@@ -1,11 +1,12 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
   scrollbar-width: thin;
-  scrollbar-color: blueviolet white;
+  scrollbar-color: brown white;
 }
 
 html::-webkit-scrollbar {
@@ -13,7 +14,7 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-thumb {
-  background-color: blueviolet;
+  background-color: brown;
 }
 
 html::-webkit-scrollbar-thumb:hover {
@@ -32,7 +33,7 @@ body {
 /* Navbar */
 nav {
   display: flex;
-  background-color: blueviolet;
+  background-color: brown;
   justify-content: space-around;
   /* padding: 20px 0; */
   color: white;
@@ -59,7 +60,7 @@ nav ul {
 nav ul li a {
   color: white;
   text-decoration: none;
-  font-size: 0.8em;
+  font-size: 1rem;
 }
 
 nav ul li a:hover {
@@ -118,9 +119,31 @@ nav ul li a:hover {
   transform: scale(0);
 }
 
-p {
-  padding: 50px 20px;
-  line-height: 1.5;
+/* Header */
+header .jumbotron {
+  background-image: url('src/image-001.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 150px 0;
+  color: white;
+  text-align: center;
+}
+
+.jumbotron h1 {
+  margin-bottom: 20px;
+  font-size: 32px;
+  letter-spacing: 5px;
+}
+
+.jumbotron p {
+  font-size: 18px;
+  letter-spacing: 3px;
+}
+
+/* Main */
+main .content {
+  padding: 10px;
+  text-align: justify;
 }
 
 /* Responsive Breakpoint */
@@ -139,11 +162,11 @@ p {
     right: 0;
     top: 0;
     width: 100%;
-    height: 50vh;
+    height: 70vh;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    background-color: blueviolet;
+    background-color: brown;
     z-index: 1;
     transform: translateY(-100%);
     transition: all 1s;
