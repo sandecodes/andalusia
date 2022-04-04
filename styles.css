@@ -124,9 +124,11 @@ header .jumbotron {
   background-image: url('src/img-1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   padding: 150px 0;
   color: white;
   text-align: center;
+  width: 100%;
 }
 
 .jumbotron h1 {
@@ -141,10 +143,34 @@ header .jumbotron {
 }
 
 /* Main */
-main .content {
-  padding: 10px;
-  text-align: justify;
-  line-height: 1.5;
+
+main h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.article {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.card {
+  border: 1px solid rgb(222, 217, 217);
+  border-radius: 20px;
+  width: 20%;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+}
+
+.card h2 {
+  padding-bottom: 20px;
+}
+
+.card img {
+  width: 100%;
+  padding-bottom: 20px;
 }
 
 /* Responsive Breakpoint */
@@ -153,6 +179,14 @@ main .content {
 @media screen and (max-width: 768px) {
   nav ul {
     width: 50%;
+  }
+
+  .article {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 40%;
   }
 }
 
@@ -182,5 +216,13 @@ main .content {
 
   .menu-toggle {
     display: flex;
+  }
+
+  .article {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 100%;
   }
 }
