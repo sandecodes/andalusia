@@ -179,6 +179,22 @@ main h1 {
   padding-bottom: 20px;
 }
 
+.images {
+  background-color: rgb(229, 229, 229);
+  padding: 20px 0;
+}
+
+.gallery {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.gallery .card {
+  width: 40%;
+  background-color: white;
+}
+
 /* Responsive Breakpoint */
 
 /* Ukuran Tablet */
@@ -229,6 +245,14 @@ main h1 {
   }
 
   .card {
+    width: 100%;
+  }
+
+  .gallery {
+    flex-wrap: wrap;
+  }
+
+  .gallery .card {
     width: 100%;
   }
 }
