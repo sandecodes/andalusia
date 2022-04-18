@@ -195,6 +195,48 @@ main h1 {
   background-color: white;
 }
 
+aside {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+.profile header {
+  text-align: center;
+}
+
+.profile header h2 {
+  margin: 20px 0;
+}
+
+.profile img {
+  width: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.profile section h3 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.profile table {
+  margin: 0 auto;
+}
+
+th,
+td {
+  padding: 5px;
+}
+
+/* Footer */
+footer {
+  padding: 30px;
+  text-align: center;
+  font-weight: bold;
+  background-color: brown;
+  color: white;
+}
+
 /* Responsive Breakpoint */
 
 /* Ukuran Tablet */
